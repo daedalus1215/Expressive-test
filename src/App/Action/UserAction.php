@@ -13,6 +13,20 @@ namespace App\Action;
  *
  * @author theAdmin
  */
-class UserAction {
-    //put your code here
+class UserAction 
+{
+
+    /**
+     *
+     * @var \Zend\Expressive\Template\TemplateRendererInterface $renderer
+     */
+    private $renderer;
+    /**
+     * 
+     * @param \Zend\Expressive\Template\TemplateRendererInterface $renderer
+     */
+    public function __construct(\Zend\Expressive\Template\TemplateRendererInterface $renderer) 
+    {
+        $this->renderer = $renderer;
+    }
 }
